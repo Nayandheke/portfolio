@@ -3,530 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nayan Dheke - AWS SAA Certified Cloud Professional & Full Stack Developer specializing in AWS, DevOps, CI/CD, and MERN stack.">
-    <meta name="keywords" content="AWS, Cloud, DevOps, Full Stack, MERN, CI/CD, Lambda, S3, React, Node.js">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Nayan Dheke | Aspiring Cloud Professional</title>
+    <meta name="description" content="Nayan Dheke - AWS SAA-certified cloud professional specializing in AI/ML, CI/CD, Serverless, and infrastructure automation.">
+    <title>Nayan Dheke | Portfolio</title>
+    
+    <!-- Preconnect to external CDNs for faster DNS lookup/handshakes -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluency/48/n.png">
+    
+    <!-- Render-blocking CSS (Deferred non-critical fonts & animations) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="w-100 bg-dark">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<body>
+    <!-- Skip navigation link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">N<span class="text-primary">.</span></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7" data-aos="fade-up">
+                        <div class="hero-content">
+                            <h1>Nayan <span>Dheke</span></h1>
+                            <p class="fs-4 fw-medium text-dark mb-4">AWS SAA-Certified Cloud Professional | AI/ML</p>
+                            <p class="fs-5 text-muted mb-5 pe-lg-5">
+                                AWS SAA-certified cloud professional with hands-on experience in CI/CD, Serverless architectures, 
+                                Infrastructure as Code (IaC), and cloud deployment. Passionate about infrastructure automation 
+                                and secure system design.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#projects" class="btn-custom btn-primary">View Portfolio</a>
+                                <a href="#contact" class="btn-custom btn-outline">Let's Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+                        <!-- Added explicit width, height, and fetchpriority for LCP performance -->
+                        <img src="/image/download.jpeg" alt="Nayan Dheke portrait" class="profile-img" width="500" height="500" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding bg-section-alt">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                        <h2 class="section-title text-start mb-4">About Me</h2>
+                        <p class="fs-5 text-muted mb-4">
+                            Currently pursuing a Bachelor of Computer Applications (BCA) at VS International College (TU), 
+                            specializing in cloud computing and intelligent systems. My technical foundation is built on 
+                            secure system design and efficient infrastructure automation.
+                        </p>
+                        <p class="fs-5 text-muted">
+                            I am dedicated to bridging the gap between networking, DevOps practices, and modern 
+                            AI/ML workflows to deliver scalable and performant technical solutions.
+                        </p>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="grid-card">
+                            <h3 class="h4 mb-4">My Info</h3>
+                            <div class="mb-4 d-flex align-items-center gap-3">
+                                <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+                                <span class="visually-hidden">Email:</span>
+                                <p class="mb-0">nayandheke800@gmail.com</p>
+                            </div>
+                            <div class="mb-4 d-flex align-items-center gap-3">
+                                <i class="fas fa-phone text-primary" aria-hidden="true"></i>
+                                <span class="visually-hidden">Phone:</span>
+                                <p class="mb-0">+977-9843234313</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-map-marker-alt text-primary" aria-hidden="true"></i>
+                                <span class="visually-hidden">Location:</span>
+                                <p class="mb-0">Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Core Expertise</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+                            <h3>Cloud Architecture</h3>
+                            <p class="text-muted">Designing scalable, highly available infrastructures on AWS utilizing Serverless, IaC, and Auto Scaling.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                            <h3>AI / ML</h3>
+                            <p class="text-muted">Working with RAG pipelines, Deep Learning models, and NLP architectures to build intelligent data-driven solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-sync" aria-hidden="true"></i></div>
+                            <h3>DevOps & Automation</h3>
+                            <p class="text-muted">Implementing robust CI/CD pipelines, containerization, and infrastructure automation to streamline delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding bg-section-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="skill-card-modern">
+                            <h3 class="h5 mb-4 text-primary">Cloud & DevOps</h3>
+                            <div class="skill-item"><i class="fab fa-aws text-primary" aria-hidden="true"></i><span>AWS (EC2, S3, Lambda)</span></div>
+                            <div class="skill-item"><i class="fas fa-network-wired text-primary" aria-hidden="true"></i><span>VPC, IAM, RDS</span></div>
+                            <div class="skill-item"><i class="fas fa-sync text-primary" aria-hidden="true"></i><span>CI/CD, Docker, Git</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-card-modern">
+                            <h3 class="h5 mb-4 text-primary">AI & Data Science</h3>
+                            <div class="skill-item"><i class="fab fa-python text-primary" aria-hidden="true"></i><span>Python & Pandas</span></div>
+                            <div class="skill-item"><i class="fas fa-microchip text-primary" aria-hidden="true"></i><span>TensorFlow & CNN</span></div>
+                            <div class="skill-item"><i class="fas fa-project-diagram text-primary" aria-hidden="true"></i><span>NLP & RAG</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-card-modern">
+                            <h3 class="h5 mb-4 text-primary">Development & APIs</h3>
+                            <div class="skill-item"><i class="fab fa-node-js text-primary" aria-hidden="true"></i><span>Node.js & Express</span></div>
+                            <div class="skill-item"><i class="fas fa-database text-primary" aria-hidden="true"></i><span>SQL, MongoDB</span></div>
+                            <div class="skill-item"><i class="fas fa-bolt text-primary" aria-hidden="true"></i><span>REST APIs, PHP</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-compress-alt text-primary" aria-hidden="true"></i></div>
+                            <h3>Serverless Image Compression</h3>
+                            <p class="text-muted flex-grow-1">Event-driven AWS Lambda + S3 pipeline automating image compression upon upload.</p>
+                            <p class="small text-primary fw-bold">AWS Lambda • S3 • Python</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-cloud-upload-alt text-warning" aria-hidden="true"></i></div>
+                            <h3>Static Website Hosting</h3>
+                            <p class="text-muted flex-grow-1">Highly available hosting on S3 with CloudFront and GitHub Actions CI/CD.</p>
+                            <p class="small text-primary fw-bold">S3 • CloudFront • CI/CD</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-shopping-cart text-secondary" aria-hidden="true"></i></div>
+                            <h3>Full-Stack MERN Apps</h3>
+                            <p class="text-muted flex-grow-1">Scalable 3-tier eCommerce and News Portal apps with RESTful APIs.</p>
+                            <p class="small text-primary fw-bold">React • Node.js • MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-leaf text-success" aria-hidden="true"></i></div>
+                            <h3>AI Plant Disease</h3>
+                            <p class="text-muted flex-grow-1">A deep learning system that identifies plant diseases with 96% accuracy using CNNs.</p>
+                            <a href="https://github.com/Nayandheke/AI-Based-Plant-Plant-Disease-Detection-" target="_blank" rel="noopener" class="text-primary fw-bold text-decoration-none mt-3">View Project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-file-pdf text-danger" aria-hidden="true"></i></div>
+                            <h3>RAG PDF System</h3>
+                            <p class="text-muted flex-grow-1">Intelligent Q&A application powered by Gemini API and LangChain for document analysis.</p>
+                            <a href="https://github.com/Nayandheke/RAG" target="_blank" rel="noopener" class="text-primary fw-bold text-decoration-none mt-3">View Project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="grid-card">
+                            <div class="card-icon"><i class="fas fa-shield-virus text-info" aria-hidden="true"></i></div>
+                            <h3>Spam Classifier</h3>
+                            <p class="text-muted flex-grow-1">NLP-based message classification tool built for high-accuracy SMS spam detection.</p>
+                            <a href="https://github.com/Nayandheke/NLP" target="_blank" rel="noopener" class="text-primary fw-bold text-decoration-none mt-3">View Project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section-padding bg-section-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Certifications & Training</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="cert-card">
+                            <h3 class="h5 mb-2">Solutions Architect Associate</h3>
+                            <p class="text-primary fw-bold mb-1">Amazon Web Services</p>
+                            <p class="small text-muted mb-0">Dec 2025 | SAA-C03</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-card">
+                            <h3 class="h5 mb-2">MERN Stack Web Development</h3>
+                            <p class="text-primary fw-bold mb-1">Broadway Infosys</p>
+                            <p class="small text-muted mb-0">Full stack development specialization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="grid-card d-flex flex-md-row align-items-center gap-4">
+                            <div class="card-icon mb-0"><i class="fas fa-university" aria-hidden="true"></i></div>
+                            <div>
+                                <h3 class="h4 mb-1">Bachelor of Computer Applications (BCA)</h3>
+                                <p class="mb-0 text-muted">VS International College (TU), Kathmandu</p>
+                                <p class="small text-primary fw-bold mb-0">Expected Graduation: 2026 | Current Semester: 8th</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-5" data-aos="fade-up">
+                        <div class="grid-card text-center p-5">
+                            <div class="card-icon mx-auto mb-4"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <h3>Email Me</h3>
+                            <p class="text-muted mb-4">I'm open to discussing new projects or opportunities.</p>
+                            <a href="mailto:nayandheke800@gmail.com" class="btn-custom btn-primary w-100">Send Message</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-card text-center p-5">
+                            <div class="card-icon mx-auto mb-4"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
+                            <h3>LinkedIn</h3>
+                            <p class="text-muted mb-4">Connect with me for professional updates.</p>
+                            <a href="https://www.linkedin.com/in/nayan-dheke-b124a1261/" target="_blank" rel="noopener" class="btn-custom btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <span class="logo-text">N<span class="text-primary">.</span></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero-section pt-5 mt-5">
-        <div class="floating-background">
-            <div class="floating-logo"><i class="fab fa-aws"></i></div>
-            <div class="floating-logo"><i class="fab fa-docker"></i></div>
-            <div class="floating-logo"><i class="fab fa-github"></i></div>
-            <div class="floating-logo"><i class="fas fa-cloud"></i></div>
-            <div class="floating-logo"><i class="fab fa-python"></i></div>
-            <div class="floating-logo"><i class="fab fa-node-js"></i></div>
-            <div class="floating-logo"><i class="fas fa-server"></i></div>
-        </div>
-        
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="hero-content">
-                        <h5 class="text-primary mb-3"><i class="fas fa-hand-wave"></i> Hello, I'm</h5>
-                        <h1 class="display-4 fw-bold text-white">Nayan <span class="text-primary">Dheke</span></h1>
-                        <h2 class="text-light mb-4">AWS Certified Solutions Architect & <span class="text-primary">Full Stack Developer</span></h2>
-                        <p class="text-light mb-4">AWS SAA-certified cloud professional with hands-on experience in CI/CD, Serverless architectures, Infrastructure as Code (IaC), and cloud deployment. Passionate about infrastructure automation and secure system design.</p>
-                        <div class="d-flex flex-wrap gap-3">
-                            <a href="#projects" class="btn btn-primary px-4 py-3">
-                                <i class="fas fa-code me-2"></i>View Projects
-                            </a>
-                            <a href="#contact" class="btn btn-outline-primary px-4 py-3">
-                                <i class="fas fa-envelope me-2"></i>Contact Me
-                            </a>
-                        </div>
-                        <div class="mt-5">
-                            <a href="https://github.com/Nayandheke" class="social-btn me-3" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nayan-dheke-b124a1261/" class="social-btn me-3" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:nayandheke800@gmail.com" class="social-btn me-3" title="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="hero-image text-center position-relative">
-                        <div class="profile-frame">
-                            <img src="/image/download.jpeg" alt="Nayan Dheke" class="profile-img">
-                        </div>
-                        <div class="floating-tech-icons">
-                            <div class="tech-icon floating-1">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="tech-icon floating-2">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="tech-icon floating-3">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="tech-icon floating-4">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <h2 class="section-title mb-4">About <span class="text-primary">Me</span></h2>
-                    <p class="text-light mb-4">AWS SAA-certified cloud professional with hands-on experience in CI/CD, Serverless architectures, Infrastructure as Code (IaC), and cloud deployment. Strong foundation in networking, Auto Scaling, and DevOps practices. Passionate about infrastructure automation and secure system design.</p>
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-content">
-                                <h5>Email</h5>
-                                <p>nayandheke800@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h5>Phone</h5>
-                                <p>+977-9843234313</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h5>Location</h5>
-                                <p>Kathmandu, Nepal</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="info-content">
-                                <h5>Education</h5>
-                                <p>BCA - VS International College (TU)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="tech-highlights">
-                        <h4 class="text-primary mb-4"><i class="fas fa-bolt me-2"></i>Core Expertise</h4>
-                        <div class="row g-3">
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fab fa-aws fa-2x"></i>
-                                    <p>AWS Cloud</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fas fa-code-branch fa-2x"></i>
-                                    <p>CI/CD</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fab fa-docker fa-2x"></i>
-                                    <p>Docker</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fas fa-network-wired fa-2x"></i>
-                                    <p>Networking</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fab fa-node-js fa-2x"></i>
-                                    <p>Node.js</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <div class="tech-highlight">
-                                    <i class="fas fa-database fa-2x"></i>
-                                    <p>SQL/PHP</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section-padding bg-dark-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Technical <span class="text-primary">Skills</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="skill-category h-100">
-                        <div class="skill-icon">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                        <h4>Cloud & DevOps</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AWS EC2</span>
-                            <span class="skill-tag">S3</span>
-                            <span class="skill-tag">IAM</span>
-                            <span class="skill-tag">RDS</span>
-                            <span class="skill-tag">VPC</span>
-                            <span class="skill-tag">Lambda</span>
-                            <span class="skill-tag">SQS</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub Actions</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-category h-100">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>Security & Identity</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MFA</span>
-                            <span class="skill-tag">SSO</span>
-                            <span class="skill-tag">TCP/IP</span>
-                            <span class="skill-tag">DNS</span>
-                            <span class="skill-tag">HTTPS</span>
-                            <span class="skill-tag">SSL/TLS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-category h-100">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h4>Development & APIs</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">Postman</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Featured <span class="text-primary">Projects</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="project-card h-100">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-compress-alt"></i>
-                            </div>
-                            <h4>Serverless Image Compression</h4>
-                        </div>
-                        <p class="project-desc">Designed an event-driven serverless pipeline utilizing AWS Lambda and S3 to automate image compression upon upload.</p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> AWS Lambda + S3 integration</li>
-                            <li><i class="fas fa-check-circle"></i> Automatic compression on upload</li>
-                            <li><i class="fas fa-check-circle"></i> Reduced storage footprint</li>
-                            <li><i class="fas fa-check-circle"></i> Event-driven architecture</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>AWS Lambda</span>
-                            <span>S3</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card h-100">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                            </div>
-                            <h4>Static Website Hosting</h4>
-                        </div>
-                        <p class="project-desc">Deployed highly available static website on Amazon S3 with CloudFront CDN for low-latency global delivery and automated CI/CD pipeline.</p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> Hosted on Amazon S3</li>
-                            <li><i class="fas fa-check-circle"></i> CloudFront CDN integration</li>
-                            <li><i class="fas fa-check-circle"></i> GitHub Actions CI/CD</li>
-                            <li><i class="fas fa-check-circle"></i> Zero-downtime updates</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>AWS S3</span>
-                            <span>CloudFront</span>
-                            <span>GitHub Actions</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card h-100">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <h4>Full-Stack MERN Applications</h4>
-                        </div>
-                        <p class="project-desc">Developed scalable full-stack apps (eCommerce, News Portal, Student Management) with RESTful APIs and authentication.</p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> 3-tier architecture</li>
-                            <li><i class="fas fa-check-circle"></i> React frontend + Node/Express backend</li>
-                            <li><i class="fas fa-check-circle"></i> MongoDB database layer</li>
-                            <li><i class="fas fa-check-circle"></i> Full CRUD + REST APIs</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Express</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section-padding bg-dark-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Certifications & <span class="text-primary">Training</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="cert-card h-100">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="cert-title">
-                                <h4>AWS Certified Solutions Architect – Associate</h4>
-                                <p class="cert-org">Amazon Web Services</p>
-                                <div class="cert-id">SAA-C03 | Dec 2025</div>
-                            </div>
-                        </div>
-                        <div class="cert-skills">
-                            <span class="skill-badge">EC2</span>
-                            <span class="skill-badge">S3</span>
-                            <span class="skill-badge">IAM</span>
-                            <span class="skill-badge">RDS</span>
-                            <span class="skill-badge">VPC</span>
-                            <span class="skill-badge">Lambda</span>
-                            <span class="skill-badge">SQS</span>
-                        </div>
-                        <p class="cert-desc">Demonstrated expertise in designing scalable, highly available, and cost-effective cloud solutions on AWS platform.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="cert-card h-100">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="cert-title">
-                                <h4>MERN Stack Web Development</h4>
-                                <p class="cert-org">Broadway Infosys</p>
-                                <div class="cert-id">MongoDB • Express • React • Node.js</div>
-                            </div>
-                        </div>
-                        <div class="cert-skills">
-                            <span class="skill-badge">MongoDB</span>
-                            <span class="skill-badge">Express.js</span>
-                            <span class="skill-badge">React</span>
-                            <span class="skill-badge">Node.js</span>
-                            <span class="skill-badge">REST APIs</span>
-                            <span class="skill-badge">Full Stack</span>
-                        </div>
-                        <p class="cert-desc">Comprehensive training program covering end-to-end web development using the MERN stack with hands-on project experience.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-12" data-aos="fade-up">
-                    <div class="education-section">
-                        <h4 class="text-primary mb-4"><i class="fas fa-graduation-cap me-2"></i>Education</h4>
-                        <div class="education-card">
-                            <div class="edu-icon">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div class="edu-content">
-                                <h5>Bachelor of Computer Applications (BCA)</h5>
-                                <p class="edu-institute">VS International College, Tribhuvan University, Kathmandu</p>
-                                <p class="edu-duration">Expected Graduation: 2026 | Current Semester: 8th</p>
-                                <p class="edu-desc">Relevant Coursework: Cloud Computing, Computer Networks, Operating Systems, Databases, Data Structures, OOP</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Let's <span class="text-primary">Connect</span></h2>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="contact-info-grid" data-aos="fade-up">
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope-open-text"></i>
-                            </div>
-                            <h5>Email Me</h5>
-                            <p>nayandheke800@gmail.com</p>
-                            <a href="mailto:nayandheke800@gmail.com" class="contact-link">
-                                <i class="fas fa-paper-plane me-2"></i>Send Email
-                            </a>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <h5>Call Me</h5>
-                            <p>+977-9843234313</p>
-                            <a href="tel:+9779843234313" class="contact-link">
-                                <i class="fas fa-phone me-2"></i>Call Now
-                            </a>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h5>Location</h5>
-                            <p>Kathmandu, Nepal</p>
-                            <a href="#" class="contact-link">
-                                <i class="fas fa-compass me-2"></i>View on Map
-                            </a>
-                        </div>
-                        
-
-                    </div>
-                    
-                    <div class="social-connect mt-5" data-aos="fade-up" data-aos-delay="100">
-                        <h4 class="text-center text-primary mb-4">Connect With Me</h4>
-                        <div class="d-flex justify-content-center gap-4 flex-wrap">
-                            <a href="https://github.com/Nayandheke" class="social-btn-large">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nayan-dheke-b124a1261/" class="social-btn-large">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="mailto:nayandheke800@gmail.com" class="social-btn-large">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark-footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="text-light mb-0">© 2025 Nayan Dheke | AWS Certified Solutions Architect</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="https://github.com/Nayandheke" class="social-btn me-3">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nayan-dheke-b124a1261/" class="social-btn me-3">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:nayandheke800@gmail.com" class="social-btn">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+            <p class="mb-0 opacity-50">&copy; 2026 Nayan Dheke | AWS SAA-Certified Professional</p>
         </div>
     </footer>
 
+    <!-- Scripts deferred naturally by structural placement -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        AOS.init({ duration: 1000, once: true });
     </script>
 </body>
 </html>
