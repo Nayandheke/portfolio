@@ -1,0 +1,50 @@
+/* =========================
+   VARIABLES & RESET
+========================= */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8f8f8;
+  --surface-hover: #f1f1f2;
+  --text: #161823;
+  --muted: #73747b;
+  --border: #e6e6e7;
+  --accent: #fe2c55;
+  --cyan: #25f4ee;
+  --green: #16a34a;
+  --blue: #2563eb;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f3f3f5;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

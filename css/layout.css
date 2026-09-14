@@ -1,0 +1,157 @@
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: var(--bg);
+  min-height: 100vh;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   TOP NAV
+========================= */
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.top-nav .brand {
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: -0.4px;
+}
+
+.top-nav .brand span {
+  color: var(--accent);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-icons a {
+  font-size: 19px;
+  color: var(--text);
+  transition: 0.2s ease;
+}
+
+.nav-icons a:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+  position: sticky;
+  top: 58px;
+  z-index: 900;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 52px;
+  background: white;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.tab i {
+  margin-right: 5px;
+}
+
+.tab.active {
+  color: var(--text);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  height: 3px;
+  border-radius: 5px 5px 0 0;
+  background: var(--text);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  padding: 18px;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 28px 18px 35px;
+  color: var(--muted);
+  font-size: 11px;
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+}
+
+footer strong {
+  color: var(--text);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 9px;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-copy {
+  margin-top: 10px;
+}

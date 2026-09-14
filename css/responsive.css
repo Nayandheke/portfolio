@@ -1,0 +1,54 @@
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  body {
+    background: white;
+  }
+
+  .page {
+    box-shadow: none;
+  }
+
+  .profile {
+    padding-top: 28px;
+  }
+
+  .stats {
+    gap: 28px;
+  }
+
+  .tabs {
+    top: 58px;
+  }
+
+  .tab {
+    font-size: 11px;
+  }
+
+  .tab i {
+    display: block;
+    margin: 0 0 2px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .profile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .content {
+    padding: 13px;
+  }
+
+  .stats {
+    gap: 21px;
+  }
+
+  .profile-btn {
+    min-width: 105px;
+  }
+}

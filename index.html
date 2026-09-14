@@ -1,330 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nayan Dheke - AWS SAA-certified BCA student with practical experience in Linux administration, DevOps, CI/CD, cloud infrastructure, and automation.">
-    <title>Nayan Dheke | Portfolio</title>
-    
-    <!-- Preconnect to external CDNs for faster DNS lookup/handshakes -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluency/48/n.png">
-    
-    <!-- Render-blocking CSS (Deferred non-critical fonts & animations) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="style.css">
+  <title>Nayan Dheke | Cloud & DevOps</title>
+  <meta name="description" content="Nayan Dheke — BCA student, AWS Certified Solutions Architect, Cloud & DevOps learner.">
+  <meta name="author" content="Nayan Dheke">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <!-- Skip navigation link for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#">N<span class="text-primary">.</span></a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body>
+
+  <main class="page">
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+    <header class="top-nav">
+      <div class="brand">Nayan<span>.</span></div>
+
+      <nav class="nav-icons" aria-label="Social links">
+        <a href="https://medium.com/@nayandheke" target="_blank" rel="noopener" aria-label="Medium">
+          <i class="fa-brands fa-medium"></i>
+        </a>
+        <a href="https://github.com/Nayandheke" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/nayan-dheke-b124a1261/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
     </header>
 
-    <main id="main-content">
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7" data-aos="fade-up">
-                        <div class="hero-content">
-                            <h1>Nayan <span>Dheke</span></h1>
-                            <p class="fs-4 fw-medium text-dark mb-4">AWS SAA-Certified | Cloud & DevOps</p>
-                            <p class="fs-5 text-muted mb-5 pe-lg-5">
-                                BCA student and AWS Certified Solutions Architect – Associate with practical experience in Linux system administration, 
-                                Bash scripting, networking, Git/GitHub, CI/CD, Docker, and AWS infrastructure. Interested in 
-                                infrastructure automation, secure system design, and troubleshooting.
-                            </p>
-                            <div class="d-flex flex-wrap gap-3">
-                                <a href="#projects" class="btn-custom btn-primary">View Portfolio</a>
-                                <a href="#contact" class="btn-custom btn-outline">Let's Connect</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
-                        <!-- Added explicit width, height, and fetchpriority for LCP performance -->
-                        <img src="/image/download.jpeg" alt="Nayan Dheke portrait" class="profile-img" width="500" height="500" fetchpriority="high">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="about" class="section-padding bg-section-alt">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                        <h2 class="section-title text-start mb-4">About Me</h2>
-                        <p class="fs-5 text-muted mb-4">
-                            Currently pursuing a Bachelor of Computer Applications (BCA) at VS International College (TU), with a focus on 
-                            cloud computing, Linux systems, networking, and DevOps practices. My technical foundation is built on 
-                            practical labs and projects involving system administration, automation, and cloud infrastructure.
-                        </p>
-                        <p class="fs-5 text-muted">
-                            I am building practical experience across Linux administration, CI/CD, containerization, networking, and AWS, 
-                            with a focus on reliable, secure, and maintainable infrastructure.
-                        </p>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="grid-card">
-                            <h3 class="h4 mb-4">My Info</h3>
-                            <div class="mb-4 d-flex align-items-center gap-3">
-                                <i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-                                <span class="visually-hidden">Email:</span>
-                                <p class="mb-0">nayandheke800@gmail.com</p>
-                            </div>
-                            <div class="mb-4 d-flex align-items-center gap-3">
-                                <i class="fas fa-phone text-primary" aria-hidden="true"></i>
-                                <span class="visually-hidden">Phone:</span>
-                                <p class="mb-0">+977-9843234313</p>
-                            </div>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fas fa-map-marker-alt text-primary" aria-hidden="true"></i>
-                                <span class="visually-hidden">Location:</span>
-                                <p class="mb-0">Kathmandu, Nepal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- =========================
+         PROFILE
+    ========================== -->
+    <section class="profile">
 
-        <section id="expertise" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Core Expertise</h2>
-                <div class="row g-4">
-                    <div class="col-lg-4" data-aos="fade-up">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
-                            <h3>Cloud Architecture</h3>
-                            <p class="text-muted">Designing scalable, highly available infrastructures on AWS utilizing Serverless, IaC, and Auto Scaling.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
-                            <h3>Linux & Systems</h3>
-                            <p class="text-muted">Working with Ubuntu servers, SSH, systemd, cron, permissions, Bash scripting, and practical troubleshooting.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-sync" aria-hidden="true"></i></div>
-                            <h3>DevOps & Automation</h3>
-                            <p class="text-muted">Building CI/CD pipelines with GitHub Actions, Docker, security scanning, and automated cloud deployments.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section-padding bg-section-alt">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="skill-card-modern">
-                            <h3 class="h5 mb-4 text-primary">Linux & Networking</h3>
-                            <div class="skill-item"><i class="fab fa-linux text-primary" aria-hidden="true"></i><span>Ubuntu, SSH, systemd, Cron</span></div>
-                            <div class="skill-item"><i class="fas fa-network-wired text-primary" aria-hidden="true"></i><span>TCP/IP, DNS, DHCP</span></div>
-                            <div class="skill-item"><i class="fas fa-terminal text-primary" aria-hidden="true"></i><span>Bash, Permissions, Troubleshooting</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="skill-card-modern">
-                            <h3 class="h5 mb-4 text-primary">DevOps & Cloud</h3>
-                            <div class="skill-item"><i class="fab fa-github text-primary" aria-hidden="true"></i><span>Git, GitHub, GitHub Actions</span></div>
-                            <div class="skill-item"><i class="fas fa-box-open text-primary" aria-hidden="true"></i><span>Docker, CI/CD, Nginx</span></div>
-                            <div class="skill-item"><i class="fab fa-aws text-primary" aria-hidden="true"></i><span>AWS EC2, S3, Lambda, IAM, VPC</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="skill-card-modern">
-                            <h3 class="h5 mb-4 text-primary">Databases & Messaging</h3>
-                            <div class="skill-item"><i class="fas fa-database text-primary" aria-hidden="true"></i><span>SQL, MongoDB</span></div>
-                            <div class="skill-item"><i class="fas fa-exchange-alt text-primary" aria-hidden="true"></i><span>RabbitMQ, SQS/SNS</span></div>
-                            <div class="skill-item"><i class="fas fa-code text-primary" aria-hidden="true"></i><span>Node.js, Express, REST APIs</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section-padding bg-section-alt">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Experience</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10" data-aos="fade-up">
-                        <div class="grid-card">
-                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-3">
-                                <div>
-                                    <h3 class="h4 mb-1">Cloud Consultant Intern</h3>
-                                    <p class="text-primary fw-bold mb-0">Cloudtry Infosys</p>
-                                </div>
-                                <span class="small text-muted">Kathmandu, Nepal | Jun 2026 – Jul 2026</span>
-                            </div>
-                            <ul class="text-muted mb-0">
-                                <li class="mb-2">Assisted with AWS cloud cost estimation using the AWS Pricing Calculator for proposed workloads.</li>
-                                <li>Evaluated cloud architecture using the AWS Well-Architected Framework across operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-server text-primary" aria-hidden="true"></i></div>
-                            <h3>Linux Server Administration & Automation</h3>
-                            <p class="text-muted flex-grow-1">Ubuntu server lab covering SSH, systemd, cron jobs, permissions, Bash scripting, and troubleshooting.</p>
-                            <p class="small text-primary fw-bold">Linux • Ubuntu • Bash • SSH • systemd • Cron</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-sync text-primary" aria-hidden="true"></i></div>
-                            <h3>Containerized CI/CD Deployment</h3>
-                            <p class="text-muted flex-grow-1">Java application containerized with Docker and automated through GitHub Actions self-hosted runners with testing and security checks.</p>
-                            <p class="small text-primary fw-bold">Docker • GitHub Actions • Trivy • Gitleaks • SonarQube • AWS EC2</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-globe text-primary" aria-hidden="true"></i></div>
-                            <h3>Cloud-Hosted Web Infrastructure</h3>
-                            <p class="text-muted flex-grow-1">EC2-hosted website with Cloudflare DNS, Nginx reverse proxy, and HTTPS using Certbot and Let's Encrypt.</p>
-                            <p class="small text-primary fw-bold">AWS EC2 • Cloudflare • Nginx • DNS • HTTPS</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-compress-alt text-primary" aria-hidden="true"></i></div>
-                            <h3>Serverless Image Compression</h3>
-                            <p class="text-muted flex-grow-1">Event-driven AWS Lambda + S3 pipeline automating image compression upon upload.</p>
-                            <p class="small text-primary fw-bold">AWS Lambda • S3 • Serverless</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-envelope-open-text text-primary" aria-hidden="true"></i></div>
-                            <h3>Message-Based Application</h3>
-                            <p class="text-muted flex-grow-1">Message-driven workflow using RabbitMQ for asynchronous communication, queues, producers, consumers, and routing.</p>
-                            <p class="small text-primary fw-bold">RabbitMQ • Queues • Producers • Consumers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="grid-card">
-                            <div class="card-icon"><i class="fas fa-cloud-upload-alt text-primary" aria-hidden="true"></i></div>
-                            <h3>Static Website Hosting</h3>
-                            <p class="text-muted flex-grow-1">Static hosting on Amazon S3 with CloudFront and GitHub Actions CI/CD for automated updates.</p>
-                            <p class="small text-primary fw-bold">S3 • CloudFront • GitHub Actions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="section-padding bg-section-alt">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Certifications & Education</h2>
-                <div class="row g-4">
-                    <div class="col-lg-6" data-aos="fade-up">
-                        <div class="cert-card">
-                            <h3 class="h5 mb-2">AWS Certified Solutions Architect – Associate</h3>
-                            <p class="text-primary fw-bold mb-1">Amazon Web Services</p>
-                            <p class="small text-muted mb-0">Dec 2025 | SAA-C03</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="cert-card">
-                            <h3 class="h5 mb-2">MERN Stack Web Development</h3>
-                            <p class="text-primary fw-bold mb-1">Broadway Infosys</p>
-                            <p class="small text-muted mb-0">Web development specialization</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4" data-aos="fade-up">
-                    <div class="col-12">
-                        <div class="grid-card d-flex flex-md-row align-items-center gap-4">
-                            <div class="card-icon mb-0"><i class="fas fa-university" aria-hidden="true"></i></div>
-                            <div>
-                                <h3 class="h4 mb-1">Bachelor of Computer Applications (BCA)</h3>
-                                <p class="mb-0 text-muted">VS International College (TU), Kathmandu</p>
-                                <p class="small text-primary fw-bold mb-0">Expected Graduation: 2026 | Current Semester: 8th</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-5" data-aos="fade-up">
-                        <div class="grid-card text-center p-5">
-                            <div class="card-icon mx-auto mb-4"><i class="fas fa-envelope" aria-hidden="true"></i></div>
-                            <h3>Email Me</h3>
-                            <p class="text-muted mb-4">I'm open to discussing new projects or opportunities.</p>
-                            <a href="mailto:nayandheke800@gmail.com" class="btn-custom btn-primary w-100">Send Message</a>
-                        </div>
-                    </div>
-                    <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-card text-center p-5">
-                            <div class="card-icon mx-auto mb-4"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
-                            <h3>LinkedIn</h3>
-                            <p class="text-muted mb-4">Connect with me for professional updates.</p>
-                            <a href="https://www.linkedin.com/in/nayan-dheke-b124a1261/" target="_blank" rel="noopener" class="btn-custom btn-primary w-100">View Profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer text-center">
-        <div class="container">
-            <p class="mb-0 opacity-50">&copy; 2026 Nayan Dheke | AWS SAA-Certified | Cloud & DevOps</p>
+      <div class="profile-image-wrap">
+        <div class="profile-image-ring">
+          <img src="assets/images/Nayan Dheke.png" alt="Nayan Dheke" class="profile-image">
         </div>
+        <div class="verified" aria-hidden="true">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+      <h1 class="profile-name">Nayan Dheke</h1>
+      <p class="profile-username">@nayandheke</p>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">AWS</span>
+          <span class="stat-label">Certified</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">7+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">BCA</span>
+          <span class="stat-label">Student</span>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <a href="mailto:nayandheke800@gmail.com" class="profile-btn primary">
+          <i class="fa-regular fa-envelope"></i>
+          Contact
+        </a>
+        <a href="https://github.com/Nayandheke" target="_blank" rel="noopener" class="profile-btn">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/nayan-dheke-b124a1261/"
+          target="_blank"
+          rel="noopener"
+          class="profile-btn icon-only"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="bio">
+        <p>
+          <strong>Cloud & DevOps Learner</strong> with an AWS Certified
+          Solutions Architect – Associate certification and practical
+          experience through projects and labs in
+          <span class="tag">Linux</span>,
+          <span class="tag">Bash</span>,
+          <span class="tag">Networking</span>,
+          <span class="tag">CI/CD</span>,
+          <span class="tag">Docker</span>, and
+          <span class="tag">AWS</span>.
+        </p>
+
+        <div class="bio-links">
+          <a href="https://medium.com/@nayandheke" target="_blank" rel="noopener" class="bio-link">
+            <i class="fa-brands fa-medium"></i>
+            Medium
+          </a>
+          <a href="https://github.com/Nayandheke" target="_blank" rel="noopener" class="bio-link">
+            <i class="fa-brands fa-github"></i>
+            github.com/Nayandheke
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TABS
+    ========================== -->
+    <div class="tabs" role="tablist" aria-label="Profile sections">
+      <button class="tab active" data-tab="skills" role="tab" aria-selected="true" aria-controls="skills">
+        <i class="fa-solid fa-code"></i>
+        Skills
+      </button>
+      <button class="tab" data-tab="projects" role="tab" aria-selected="false" aria-controls="projects">
+        <i class="fa-solid fa-layer-group"></i>
+        Projects
+      </button>
+      <button class="tab" data-tab="experience" role="tab" aria-selected="false" aria-controls="experience">
+        <i class="fa-solid fa-briefcase"></i>
+        Experience
+      </button>
+      <button class="tab" data-tab="resume" role="tab" aria-selected="false" aria-controls="resume">
+        <i class="fa-solid fa-file-lines"></i>
+        Resume
+      </button>
+    </div>
+
+
+    <!-- =========================
+         CONTENT
+    ========================== -->
+    <div class="content">
+
+      <!-- =========================================
+           SKILLS TAB
+      ========================================== -->
+<section id="skills" class="tab-content active" role="tabpanel">
+
+  <div class="section-heading">
+    <h2>Technical Skills</h2>
+    <p>Things I'm currently working with and learning.</p>
+  </div>
+
+  <div class="skill-grid">
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-brands fa-linux"></i>
+        Linux & Systems Administration
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Ubuntu</span>
+        <span class="skill-tag">SSH</span>
+        <span class="skill-tag">systemd</span>
+        <span class="skill-tag">Cron</span>
+        <span class="skill-tag">Process Management</span>
+        <span class="skill-tag">User & Permissions</span>
+        <span class="skill-tag">Package Management</span>
+      </div>
+    </div>
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-solid fa-network-wired"></i>
+        Networking
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">TCP/IP</span>
+        <span class="skill-tag">DNS</span>
+        <span class="skill-tag">DHCP</span>
+        <span class="skill-tag">HTTP/HTTPS</span>
+        <span class="skill-tag">IP Addressing</span>
+        <span class="skill-tag">Network Diagnostics</span>
+      </div>
+    </div>
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-solid fa-gears"></i>
+        DevOps & Automation
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Bash</span>
+        <span class="skill-tag">Shell Scripting</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Docker</span>
+      </div>
+    </div>
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-brands fa-aws"></i>
+        Cloud Infrastructure
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">EC2</span>
+        <span class="skill-tag">S3</span>
+        <span class="skill-tag">Lambda</span>
+        <span class="skill-tag">IAM</span>
+        <span class="skill-tag">VPC</span>
+        <span class="skill-tag">CloudWatch</span>
+      </div>
+    </div>
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-solid fa-server"></i>
+        Servers, Databases & Messaging
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Nginx</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">RabbitMQ</span>
+        <span class="skill-tag">Amazon SQS</span>
+        <span class="skill-tag">Amazon SNS</span>
+      </div>
+    </div>
+
+    <div class="skill-section">
+      <div class="skill-section-title">
+        <i class="fa-solid fa-code"></i>
+        MERN Stack
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Google Gemini API</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+      <!-- =========================================
+           PROJECTS TAB
+      ========================================== -->
+      <section id="projects" class="tab-content" role="tabpanel">
+
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <p>Hands-on infrastructure, DevOps, and full-stack projects.</p>
+        </div>
+
+        <div class="project-list">
+
+          <!-- Linux -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-brands fa-linux"></i>
+              </div>
+              <div>
+                <div class="project-title">Linux Server Administration & Automation Lab</div>
+                <div class="project-subtitle">Linux · Ubuntu · Bash · SSH</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Configured and managed an Ubuntu Linux server using SSH, users and permissions, processes, packages, systemd services, and cron jobs.</li>
+                <li>Wrote Bash scripts to automate routine administrative tasks and scheduled jobs.</li>
+                <li>Practiced troubleshooting of service failures, permissions, logs, resource usage, and network connectivity.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">Ubuntu</span>
+                <span class="tech">SSH</span>
+                <span class="tech">Bash</span>
+                <span class="tech">systemd</span>
+                <span class="tech">Cron</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CI/CD -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-brands fa-docker"></i>
+              </div>
+              <div>
+                <div class="project-title">Containerized CI/CD Deployment</div>
+                <div class="project-subtitle">Docker · GitHub Actions · AWS</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Containerized a Java application using Docker and managed source control with Git and GitHub.</li>
+                <li>Built a GitHub Actions CI/CD pipeline on self-hosted runners for automated testing, vulnerability scanning with Trivy, secret detection with Gitleaks, code analysis with SonarQube, and artifact management.</li>
+                <li>Automated Docker image builds and pushes to Docker Hub for deployment to an AWS EC2 Linux server.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">Docker</span>
+                <span class="tech">GitHub Actions</span>
+                <span class="tech">Trivy</span>
+                <span class="tech">Gitleaks</span>
+                <span class="tech">SonarQube</span>
+                <span class="tech">AWS EC2</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cloud Infrastructure -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div>
+                <div class="project-title">Cloud-Hosted Web Infrastructure</div>
+                <div class="project-subtitle">AWS · Cloudflare · Nginx</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Provisioned an AWS EC2 Linux server to host a website and configured Cloudflare DNS to point the domain to the server's public IPv4 address.</li>
+                <li>Deployed and configured Nginx as a web server to handle incoming HTTP requests and serve website content.</li>
+                <li>Secured web traffic with HTTPS using Certbot and Let's Encrypt SSL/TLS certificates.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">AWS EC2</span>
+                <span class="tech">Linux</span>
+                <span class="tech">Cloudflare</span>
+                <span class="tech">DNS</span>
+                <span class="tech">Nginx</span>
+                <span class="tech">HTTPS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ====== MERN PROJECTS (NEW) ====== -->
+
+          <!-- AI Chatbot -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <div class="project-title">AI-Powered Chatbot</div>
+                <div class="project-subtitle">React · Node.js · Gemini API</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Built an AI-powered chatbot using the Google Gemini API with Node.js and React.</li>
+                <li>Integrated real-time conversational responses with a responsive React frontend.</li>
+                <li>Handled API requests and responses through a Node.js backend layer.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">Gemini API</span>
+                <span class="tech">REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Student Management System -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <div>
+                <div class="project-title">Student Management System</div>
+                <div class="project-subtitle">MERN Stack · CRUD</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Created a management application for handling student-related records and CRUD operations.</li>
+                <li>Developed a React frontend with a Node/Express backend and MongoDB for data storage.</li>
+                <li>Implemented full CRUD workflows for managing student information.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">Express</span>
+                <span class="tech">MongoDB</span>
+                <span class="tech">CRUD</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- News Portal -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-newspaper"></i>
+              </div>
+              <div>
+                <div class="project-title">News Portal</div>
+                <div class="project-subtitle">React · Node · Express · MongoDB</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Developed a news-focused web application using React, Node.js, Express, and MongoDB.</li>
+                <li>Implemented content management features for publishing and updating articles.</li>
+                <li>Designed API-based data flow between frontend and backend services.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">Express</span>
+                <span class="tech">MongoDB</span>
+                <span class="tech">REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- RabbitMQ -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div>
+                <div class="project-title">Message-Based Application</div>
+                <div class="project-subtitle">RabbitMQ · Messaging · Async Communication</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul>
+                <li>Built a message-driven application using RabbitMQ for asynchronous communication between application components.</li>
+                <li>Practiced queues, producers, consumers, message routing, and decoupled application design.</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech">RabbitMQ</span>
+                <span class="tech">Queues</span>
+                <span class="tech">Producers</span>
+                <span class="tech">Consumers</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- =========================================
+           EXPERIENCE TAB
+      ========================================== -->
+      <section id="experience" class="tab-content" role="tabpanel">
+
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>Professional experience.</p>
+        </div>
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <div class="experience-role">Cloud Consultant Intern</div>
+              <div class="experience-company">Cloudtry Infosys · Kathmandu, Nepal</div>
+            </div>
+            <div class="experience-duration">2 Months</div>
+          </div>
+          <ul>
+            <li>Assisted with AWS cloud cost estimation using the AWS Pricing Calculator for proposed workloads.</li>
+            <li>Evaluated cloud architecture using the AWS Well-Architected Framework across operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <div class="experience-role">Current Focus</div>
+              <div class="experience-company">Cloud & DevOps</div>
+            </div>
+            <div class="experience-duration">Learning</div>
+          </div>
+          <ul>
+            <li>Building practical knowledge in Linux administration, infrastructure automation, CI/CD, containerization, networking, and cloud infrastructure.</li>
+            <li>Documenting technical learning and projects through GitHub and Medium.</li>
+          </ul>
+        </article>
+
+      </section>
+
+
+      <!-- =========================================
+           RESUME TAB
+      ========================================== -->
+      <section id="resume" class="tab-content" role="tabpanel">
+
+        <div class="section-heading">
+          <h2>Resume</h2>
+          <p>Education, certifications, and continuous learning.</p>
+        </div>
+
+        <!-- Education -->
+        <article class="education-card">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="education-title">Bachelor of Computer Applications (BCA)</div>
+          <div class="education-school">VS International College (TU), Kathmandu</div>
+
+          <div class="coursework">
+            <div class="coursework-title">Relevant Coursework</div>
+            <div class="coursework-list">
+              <span class="course">Cloud Computing</span>
+              <span class="course">Computer Networks</span>
+              <span class="course">Operating Systems</span>
+              <span class="course">Databases</span>
+              <span class="course">Scripting Languages</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- AWS Certification -->
+        <article class="cert-card">
+          <div class="cert-logo">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+          <div>
+            <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+            <div class="cert-provider">SAA-C03</div>
+          </div>
+          <div class="cert-badge">CERTIFIED</div>
+        </article>
+
+        <!-- MERN Certification -->
+        <article class="cert-card">
+          <div class="cert-logo">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div>
+            <div class="cert-name">MERN Stack Web Development Certification</div>
+            <div class="cert-provider">Web Development</div>
+          </div>
+          <div class="cert-badge">CERTIFIED</div>
+        </article>
+
+        <!-- Medium -->
+        <article class="education-card">
+          <div class="education-icon">
+            <i class="fa-brands fa-medium"></i>
+          </div>
+          <div class="education-title">Technical Writing & Learning</div>
+          <div class="education-school">
+            Sharing Cloud, Linux and DevOps learning on Medium.
+          </div>
+          <div class="mt-13">
+            <a href="https://medium.com/@nayandheke" target="_blank" rel="noopener" class="profile-btn full-width">
+              <i class="fa-brands fa-medium"></i>
+              Visit Medium Profile
+            </a>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+      <strong>Nayan Dheke</strong> · Cloud & DevOps
+      <div class="footer-links">
+        <a href="https://github.com/Nayandheke" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/nayan-dheke-b124a1261/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://medium.com/@nayandheke" target="_blank" rel="noopener">Medium</a>
+      </div>
+      <div class="footer-copy">
+        © <span id="year"></span> Nayan Dheke
+      </div>
     </footer>
 
-    <!-- Scripts deferred naturally by structural placement -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
